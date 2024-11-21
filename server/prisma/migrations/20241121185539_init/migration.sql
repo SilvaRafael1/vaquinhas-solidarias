@@ -1,8 +1,10 @@
 -- CreateTable
 CREATE TABLE "Vaquinha" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "id" SERIAL NOT NULL,
     "name" TEXT NOT NULL,
     "desc" TEXT NOT NULL,
     "url" TEXT NOT NULL,
-    "image" TEXT
+    "image" TEXT,
+
+    CONSTRAINT "Vaquinha_pkey" PRIMARY KEY ("id")
 );
