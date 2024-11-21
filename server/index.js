@@ -14,6 +14,6 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use("/api", router)
 
-app.listen(3000, () => {
-  console.log("Server está rodando na porta 3000...")
+app.listen(8080, () => {
+  console.log("Server está rodando na porta 8080...")
 })
