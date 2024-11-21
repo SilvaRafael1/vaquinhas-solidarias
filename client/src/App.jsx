@@ -27,10 +27,10 @@ export default function App() {
   }, [])
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center bg-orange-100 h-screen">
       <div className="text-4xl font-serif font-semibold text-blue-700 mt-4">Vaquinhas Solidárias</div>
       <div className="text-2xl font-sans text-blue-600 mb-4">Sua doação pode salvar uma vida!</div>
-      <div className="border border-solid rounded-md p-4 w-[1000px]">
+      <div className="border-2 border-blue-600 border-solid rounded-md p-4 w-[1000px] bg-white">
         <Card className="flex my-2">
           <CardMedia
             component="img"
