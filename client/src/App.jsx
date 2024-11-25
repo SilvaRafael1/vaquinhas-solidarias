@@ -48,9 +48,9 @@ export default function App() {
     <div className="flex flex-col items-center justify-center bg-zinc-200 min-h-screen">
       <div className="text-4xl font-serif font-semibold text-blue-700 mt-4">Vaquinhas Solidárias</div>
       <div className="text-2xl font-sans text-blue-600 mb-4">Sua doação pode salvar uma vida!</div>
-      <div className="border-2 border-blue-600 border-solid rounded-md p-4 w-[1000px] bg-white">
+      <div className="border-2 border-blue-600 border-solid rounded-md p-4 lg:w-[1000px] bg-white">
         {vaquinhas.map((vaquinha) => (
-          <Card className="flex my-2 justify-between items-center" key={vaquinha.id}>
+          <Card className="lg:flex my-2 justify-between items-center" key={vaquinha.id}>
             <CardMedia 
               component="img"
               className="h-32"
@@ -108,7 +108,6 @@ export default function App() {
             variant="standard"
           />
           <TextField
-            autoFocus
             required
             margin="dense"
             id="desc"
@@ -119,7 +118,6 @@ export default function App() {
             variant="standard"
           />
           <TextField
-            autoFocus
             required
             margin="dense"
             id="url"
@@ -130,7 +128,7 @@ export default function App() {
             variant="standard"
           />
           <TextField
-            autoFocu
+            required
             margin="dense"
             id="image"
             name="image"
