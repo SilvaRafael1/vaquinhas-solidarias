@@ -53,7 +53,7 @@ export default function App() {
           <Card className="lg:flex my-2 p-1 border justify-between items-center" key={vaquinha.id}>
             <CardMedia 
               component="img"
-              className="h-32 border border-black"
+              className="max-h-32 max-w-64 border border-black"
               alt={vaquinha.name}
               image={vaquinha.image}
             />
